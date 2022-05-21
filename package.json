@@ -1,13 +1,15 @@
 {
 	"name": "@klarr-agency/circum-icons-vue",
-	"version": "1.0.0",
+	"version": "1.1.13",
 	"description": "Circum icons pack for vue.js",
-	"main": "./dist/library.ssr.js",
-	"module": "./dist/library.esm.js",
-	"browser": "./dist/library.js",
-	"unpkg": "./dist/library.js",
+	"main": "./dist/CircumIcons.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Klarr-Agency/circum-icons-vue"
+	},
 	"scripts": {
-		"build": "rollup -c --environment BUILD:production"
+		"build": "rollup -c",
+		"prepublishOnly": "npm run build"
 	},
 	"author": "Klarr Agency",
 	"devDependencies": {
@@ -15,6 +17,7 @@
 		"rollup-plugin-vue": "^6.0.0"
 	},
 	"files": [
+		"dist",
 		"src"
 	],
 	"publishConfig": {

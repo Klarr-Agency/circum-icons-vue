@@ -1,31 +1,10 @@
 import vue from "rollup-plugin-vue";
 
-export default [
-	// ESM build to be used with webpack/rollup.
-	{
-		input: "src/index.js",
-		output: {
-			format: "esm",
-			file: "dist/library.esm.js",
-		},
-		plugins: [vue()],
+export default {
+	input: "src/CircumIcons.vue",
+	output: {
+		format: "esm",
+		file: "dist/CircumIcons.js",
 	},
-	// SSR build.
-	{
-		input: "src/index.js",
-		output: {
-			format: "cjs",
-			file: "dist/library.ssr.js",
-		},
-		plugins: [vue({ template: { optimizeSSR: true } })],
-	},
-	// Browser build.
-	{
-		input: "src/wrapper.js",
-		output: {
-			format: "iife",
-			file: "dist/library.js",
-		},
-		plugins: [vue()],
-	},
-];
+	plugins: [vue()],
+};
