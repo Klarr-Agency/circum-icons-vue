@@ -1,6 +1,6 @@
 {
 	"name": "@klarr-agency/circum-icons-vue",
-	"version": "1.1.14",
+	"version": "1.1.15",
 	"description": "Circum icons pack for vue.js",
 	"main": "./dist/CircumIcons.js",
 	"repository": {
